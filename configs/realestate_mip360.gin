@@ -1,0 +1,28 @@
+Config.dataset_loader = 'realestate10k'
+Config.batching = 'single_image'
+Config.near = [0.2, 0.2, 0.2, 0.2, 0.2, 0.2] # Set this based on the number of levels. Here its set for 6 levels.
+Config.far = [125, 125, 125, 125, 125, 125] # Set this based on the number of levels. Here its set for 6 levels.
+Config.factor = 2
+Config.batch_size = 1024
+Config.max_steps = 250000
+
+Model.raydist_fn = None
+Model.opaque_background = True
+
+PropMLP.warp_fn = @coord.contract
+PropMLP.net_depth = 4
+PropMLP.net_width = 256
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+
+NerfMLP.warp_fn = @coord.contract
+NerfMLP.net_depth = 8
+NerfMLP.net_width = 1024
+NerfMLP.disable_density_normals = True
+
+NerfMLP.max_deg_point = 16
+PropMLP.max_deg_point = 16
+PropMLP.basis_shape = 'octahedron'
+NerfMLP.basis_shape = 'octahedron'
+PropMLP.basis_subdivisions = 1
+NerfMLP.basis_subdivisions = 1
