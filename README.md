@@ -4,10 +4,10 @@ This repository contains the code release for :
 [Strata-NeRF](https://ankitatiisc.github.io/Strata-NeRF/),
 
 This implementation is written in [JAX](https://github.com/google/jax), and
-is a fork of [mip-NeRF](https://github.com/google/mipnerf).
+is a fork of [mip-NeRF360](https://github.com/google-research/multinerf).
 This is research code, and should be treated accordingly.
 
-The link to download our dataset in found in our [project page](https://ankitatiisc.github.io/Strata-NeRF/) 
+The link to download our dataset can be found in our [project page](https://ankitatiisc.github.io/Strata-NeRF/) 
 
 ## Setup
 
